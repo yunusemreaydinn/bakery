@@ -1,0 +1,29 @@
+.button-div {
+  position: fixed;
+  width: 100%;
+  bottom: 40px;
+  left: 95%;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 10;
+}
+.scroll-btn {
+  cursor: pointer;
+  color: var(--color-golden);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  transition: opacity 0.5s;
+}
+.scroll-btn:hover{
+  color: var(--color-grey);
+  transition: 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
